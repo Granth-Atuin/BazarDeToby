@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; }
+
+:root{
+  --color-bg:#ffffff;
+  --color-text:#111827;
+  --color-primary:#FACC15;
+}
+
+.container-app { @apply max-w-7xl mx-auto px-4; }
+.btn-primary { @apply bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-medium rounded-xl px-4 py-2 transition-colors; }
+.card { @apply bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.06)] border border-gray-100; }

@@ -1,0 +1,10 @@
+[
+{"id":1,"slug":"pava-inox","title":"Pava inox 2L","price":15999,"image":"https://picsum.photos/seed/pava/400/300","category":"Hogar"},
+{"id":2,"slug":"termo-amarillo","title":"Termo amarillo 1L","price":18999,"image":"https://picsum.photos/seed/termo/400/300","category":"Destacados"},
+{"id":3,"slug":"tostadora","title":"Tostadora 2 rebanadas","price":32999,"image":"https://picsum.photos/seed/tost/400/300","category":"Hogar"},
+{"id":4,"slug":"auriculares-bluetooth","title":"Auriculares Bluetooth","price":24999,"image":"https://picsum.photos/seed/auri/400/300","category":"Electrónica"},
+{"id":5,"slug":"lampara-led","title":"Lámpara LED E27","price":2999,"image":"https://picsum.photos/seed/led/400/300","category":"Destacados"},
+{"id":6,"slug":"sarten-antiadherente","title":"Sartén antiadherente 24cm","price":21999,"image":"https://picsum.photos/seed/sarten/400/300","category":"Hogar"},
+{"id":7,"slug":"parlante-portatil","title":"Parlante portátil","price":45999,"image":"https://picsum.photos/seed/parl/400/300","category":"Electrónica"},
+{"id":8,"slug":"mate-acero","title":"Mate de acero","price":8999,"image":"https://picsum.photos/seed/mate/400/300","category":"Destacados"}
+]

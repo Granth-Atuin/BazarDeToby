@@ -1,5 +1,5 @@
 {
-  "name": "admin-productos",
+  "name": "bazar-de-toby",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,13 +8,17 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "lit": "^3.3.1"
-  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "vite": "^7.1.6"
+  },
+  "dependencies": {
+    "lucide-react": "^0.544.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.9.1",
+    "zustand": "^5.0.8"
   }
 }
