@@ -5,3 +5,74 @@
 body {
   @apply bg-dark text-yellowAccent;
 }
+
+/* ==== Carruseles de categorías ==== */
+.categoria {
+  margin-bottom: 2rem;
+}
+
+.categoria h2 {
+  @apply text-xl font-bold mb-4;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background: #facc15;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.4);
+  flex: 0 0 auto;
+  width: 200px;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==== Carrito lateral ==== */
+.carrito-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px; /* escondido */
+  width: 300px;
+  height: 100%;
+  background: #1f1f1f;
+  color: #facc15;
+  box-shadow: -4px 0 20px rgba(250, 204, 21, 0.3);
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.carrito-sidebar.abierto {
+  right: 0; /* se muestra */
+}
+
+.carrito-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}

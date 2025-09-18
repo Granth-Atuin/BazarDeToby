@@ -8,16 +8,36 @@ export class NavBar extends LitElement {
       box-shadow: 0 4px 10px rgba(250, 204, 21, 0.3);
     }
     nav {
-      @apply flex items-center justify-between p-4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
     }
     h1 {
-      @apply text-yellowAccent text-xl font-bold;
+      color: #facc15;
+      font-size: 1.25rem;
+      font-weight: bold;
     }
     button {
-      @apply bg-yellowAccent text-dark font-semibold px-4 py-2 rounded-lg shadow-glow hover:bg-yellow-400 transition;
+      background: #facc15;
+      color: #121212;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 20px rgba(250, 204, 21, 0.4);
+      transition: background 0.2s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #fcd34d;
     }
     .btns {
-      @apply flex gap-3;
+      display: flex;
+      gap: 0.75rem;
+    }
+    img {
+      width: 2rem;
+      height: 2rem;
     }
   `;
 
@@ -25,7 +45,7 @@ export class NavBar extends LitElement {
     return html`
       <nav>
         <div class="flex items-center gap-2">
-          <img src="/logo.png" alt="logo" class="w-8 h-8" />
+          <img src="/logo.png" alt="logo" />
           <h1>Catálogo</h1>
         </div>
         <div class="btns">
@@ -35,9 +55,7 @@ export class NavBar extends LitElement {
           <button @click=${() => (window.location.href = "/categorias.html")}>
             Categorías
           </button>
-          <button @click=${() => (window.location.href = "/pedido.html")}>
-            Hacer pedido
-          </button>
+          <button id="abrirCarrito">🛒 Carrito</button>
         </div>
       </nav>
     `;

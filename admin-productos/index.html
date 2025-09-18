@@ -4,23 +4,98 @@
     <meta charset="UTF-8" />
     <title>Catálogo de Productos</title>
     <script type="module" src="/src/components/NavBar.js"></script>
-    <link rel="stylesheet" href="/src/Style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="bg-dark text-yellowAccent">
+  <body>
     <nav-bar></nav-bar>
-    <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-[#1f1f1f] shadow-glow rounded-xl p-4">
-        <h2 class="text-lg font-bold mb-2">Categoría: Electrónica</h2>
-        <p>Ejemplo producto 1</p>
-      </div>
-      <div class="bg-[#1f1f1f] shadow-glow rounded-xl p-4">
-        <h2 class="text-lg font-bold mb-2">Categoría: Ropa</h2>
-        <p>Ejemplo producto 2</p>
-      </div>
-      <div class="bg-[#1f1f1f] shadow-glow rounded-xl p-4">
-        <h2 class="text-lg font-bold mb-2">Categoría: Hogar</h2>
-        <p>Ejemplo producto 3</p>
-      </div>
+    <main class="p-6">
+      <!-- Categoría 1 -->
+      <section class="categoria">
+        <h2>Electrónica</h2>
+        <div class="carrusel">
+          <div class="card">
+            <img src="https://i.ibb.co/p4WZ5sH/lobo.png" alt="Producto 1" />
+            <h5>Producto 1</h5>
+            <p>$1500</p>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/RT8VsmP/tigre.png" alt="Producto 2" />
+            <h5>Producto 2</h5>
+            <p>$1200</p>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/fGSzQXM/aguila.png" alt="Producto 3" />
+            <h5>Producto 3</h5>
+            <p>$900</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categoría 2 -->
+      <section class="categoria">
+        <h2>Ropa</h2>
+        <div class="carrusel">
+          <div class="card">
+            <img src="https://i.ibb.co/BP98cQ6/pantera.png" alt="Producto 4" />
+            <h5>Producto 4</h5>
+            <p>$1100</p>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/M5DnH3V/oso.png" alt="Producto 5" />
+            <h5>Producto 5</h5>
+            <p>$800</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categoría 3 -->
+      <section class="categoria">
+        <h2>Hogar</h2>
+        <div class="carrusel">
+          <div class="card">
+            <img src="https://i.ibb.co/0m9d1ht/leon.png" alt="Producto 6" />
+            <h5>Producto 6</h5>
+            <p>$700</p>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/fGSzQXM/aguila.png" alt="Producto 7" />
+            <h5>Producto 7</h5>
+            <p>$950</p>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/p4WZ5sH/lobo.png" alt="Producto 8" />
+            <h5>Producto 8</h5>
+            <p>$1050</p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Sidebar del carrito -->
+    <aside id="carrito" class="carrito-sidebar">
+      <div class="carrito-header">
+        <h2>Tu Carrito</h2>
+        <button id="cerrarCarrito">✖</button>
+      </div>
+      <div class="carrito-items">
+        <p>No hay productos todavía</p>
+      </div>
+    </aside>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const carrito = document.getElementById("carrito");
+        const abrirBtn = document.getElementById("abrirCarrito");
+        const cerrarBtn = document.getElementById("cerrarCarrito");
+
+        abrirBtn?.addEventListener("click", () => {
+          carrito.classList.add("abierto");
+        });
+
+        cerrarBtn?.addEventListener("click", () => {
+          carrito.classList.remove("abierto");
+        });
+      });
+    </script>
   </body>
 </html>
