@@ -1,9 +1,58 @@
-export default function Home() {
+import { useEffect, useMemo, useState } from "react";
+import CategoryCarousel from "../components/Carousel/CategoryCarousel";
+import { fetchProducts, normalizeProduct } from "../lib/apiClient";
+import mock from "../data/products.json";
+
+export default function Home(){
+  const [loading, setLoading] = useState(true);
+  const [err, setErr]       = useState(null);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const apiItems = await fetchProducts();
+        const norm = apiItems.map(normalizeProduct);
+        if (mounted) setProducts(norm);
+      } catch {
+        // fallback al mock
+        const norm = mock.map(normalizeProduct);
+        if (mounted) setProducts(norm);
+        setErr(null);
+      } finally {
+        if (mounted) setLoading(false);
+      }
+    })();
+    return () => { mounted = false; };
+  }, []);
+
+  const { catA, catB, catC } = useMemo(() => {
+    const byCat = new Map();
+    for (const p of products) {
+      const c = p.category || "General";
+      if (!byCat.has(c)) byCat.set(c, []);
+      byCat.get(c).push(p);
+    }
+    const cats = [...byCat.keys()];
+    const [a,b,c] = cats.length >= 3 ? cats.slice(0,3) : [...cats, "Hogar", "Electrónica", "Destacados"].slice(0,3);
+    return {
+      catA: { title: a, items: byCat.get(a) || [] },
+      catB: { title: b, items: byCat.get(b) || [] },
+      catC: { title: c, items: byCat.get(c) || [] },
+    };
+  }, [products]);
+
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Home OK</h1>
-      <p>Si ves esto, el render está funcionando.</p>
-      <div className="card p-4">Tarjeta de prueba (tema blanco/amarillo)</div>
+    <div className="space-y-8">
+      <h1 className="text-2xl font-bold">Catálogo</h1>
+
+      {loading && <div className="card p-4">Cargando productos…</div>}
+      {err && <div className="card p-4 bg-red-50 text-red-700">No se pudo contactar la API. Mostrando datos de prueba.</div>}
+
+      <CategoryCarousel title={catA.title} products={catA.items} />
+      <CategoryCarousel title={catB.title} products={catB.items} />
+      <CategoryCarousel title={catC.title} products={catC.items} />
     </div>
   );
 }
