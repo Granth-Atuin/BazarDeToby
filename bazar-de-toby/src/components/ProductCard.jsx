@@ -1,25 +1,24 @@
-import Button from "./UI/Button";
-import { useCart } from "../store/cartStore";
-import { formatARS } from "../lib/currency";
-import { Link } from "react-router-dom";
+import { ShoppingCart } from "lucide-react";
+import { useCart } from "../../store/cartStore"; // ajustar según tu estructura
 
-export default function ProductCard({ product }){
-const add = useCart(s=>s.addItem);
+export default function ProductCard({ product }) {
+  const { add } = useCart();
 
-return (
-    <div className="card w-56 shrink-0 snap-start">
-    <Link to={`/producto/${product.slug}`} className="block">
-        <img src={product.image} alt={product.title} className="w-full h-40 object-cover rounded-2xl" />
-    </Link>
-    <div className="p-3">
-        <Link to={`/producto/${product.slug}`} className="block font-medium line-clamp-2 min-h-[3.25rem]">
-            {product.title}
-        </Link>
-        <div className="mt-1 text-lg font-semibold">{formatARS(product.price)}</div>
-        <Button className="mt-3 btn-primary w-full" onClick={()=>add(product)}>
-            Agregar al carrito
-        </Button>
+  return (
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 flex flex-col">
+      <img
+        src={product.image}
+        alt={product.title}
+        className="w-full h-40 object-cover rounded-md mb-2"
+      />
+      <h3 className="font-semibold text-lg mb-1">{product.title}</h3>
+      <p className="text-gray-600 mb-2">${product.price}</p>
+      <button
+        onClick={() => add(product)}
+        className="mt-auto btn-primary flex items-center gap-2 justify-center"
+      >
+        <ShoppingCart className="w-4 h-4" /> Agregar
+      </button>
     </div>
-    </div>
-);
+  );
 }
