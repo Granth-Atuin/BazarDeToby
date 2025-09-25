@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
-import ProductCard from "../Cart/ProductCard";
+import ProductCard from "./CartDrawer";
 
 export default function CategoryCarousel({ title, products }) {
   if (!products?.length) return null;

@@ -1,5 +1,5 @@
 import { X } from "lucide-react";
-import { useCart } from "../../store/cartStore";
+import { useCart } from "../store/cartStore";
 
 export default function CartDrawer({ open, onClose }) {
 const { items, totalQty, clear } = useCart();

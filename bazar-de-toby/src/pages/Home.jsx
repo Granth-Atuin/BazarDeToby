@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import CategoryCarousel from "../components/Carousel/CategoryCarousel";
+import CategoryCarousel from "../components/CategoryCarousel";
 import { fetchProducts, normalizeProduct } from "../lib/apiClient";
 import mock from "../data/products.json";
 

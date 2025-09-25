@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react";
-import ArrowButton from "../ArrowButton";
+import ArrowButton from "./ArrowButton";
 
 export default function Carousel({ children, autoPlay = false, interval = 3000 }) {
   const ref = useRef(null);

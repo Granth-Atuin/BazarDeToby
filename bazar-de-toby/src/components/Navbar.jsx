@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { useCart } from "../store/cartStore";
-import CartDrawer from "./cart/CartDrawer";
+import CartDrawer from "./CartDrawer";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
