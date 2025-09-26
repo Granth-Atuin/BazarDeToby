@@ -6,9 +6,10 @@ html, body, #root { height: 100%; background: #fffbeb; }
 
 @theme {
   /*🌱cambiar por los del figma y establecer nombres especificos*/
-  --color-bg:#ffffff;
-  --color-text:#111827;
-  --color-primary:#FACC15;
+  --color-bg:#FFE6A7;
+  --color-navbar:#99582A;
+  --color-footer:#BB9457;
+  --color-bg-carrousel:#D9D9D9;
 }
 
 @layer components{
