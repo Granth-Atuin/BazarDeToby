@@ -1,52 +1,65 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; background: #fffbeb; }
+
+/*voy a poner como comentarios los comandos tailwind que por alguna razon dan error
+en el codigo, no debería y no sabría por qué, mañana lo veo mejor, por ahora voy
+remarcandolo para poder hacer commit -luka*/
+
 body {
-    background-color: #FFE6A7;
+    @apply bg-[#FFE6A7]
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #99582A;
-    width: auto;
-    padding: 15px;
+    @apply flex
+            items-center
+            justify-between
+            bg-[#99582A]
+            w-auto
+            p-15
 }
 
 .titulo {
-    font-size: 18px;
-    background-color: #F5F5F5;
-    padding: 10px;
-    margin: 0;
-    width: auto;
-    border-radius: 10px;
-    font-weight: bold;
+    @apply text-lg
+             bg-[#F5F5F5]
+            p-10
+            m-0
+            w-auto
+            rounded-lg
+            font-bold
 }
 
 .busqueda {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    @apply  flex
+            justify-center
+            relative
 }
 
 .busqueda input {
-    width: 100%;
-    padding: 8px 40px 8px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 560px;
-    box-sizing: border-box;
+    @apply  width-full
+            pt-8 
+            pr-40 
+            pb-8
+            pl-10
+            text-base
+            border
+            border-solid
+            border[#ccc]
+            rounded-sm
+            w-xl
+            box-border
 }
 
 .busqueda i {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #555;
+    @apply absolute
+            top-[50%]
+            right-[5px]
+            transform-[translateY(-50%)]
+            bg-transparent
+            border-none
+            cursor-pointer
+            text-base
+            color-[#555]
 }
 
 /*no pude ver bien como hacer más grande el boton de busqueda donte está la lupa -luka*/
@@ -54,29 +67,29 @@ nav {
 pero algo es algo jajs -luka*/
 
 .busqueda i:hover {
-    color: #000;
+    @apply color-[#000]
 }
 
 .usuario button {
-    font-size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
+    @apply text-lg
+            bg-transparent
+            border-none
+            cursor-pointer
+            padding-[5px]
+            rounded-md
 
 }
 
 .usuario button:hover {
-    background-color: #74421e; 
+    @apply bg-[#74421e] 
 }
 
 .carrito button {
-    font-size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+    @apply text-lg
+            bg-transparent
+            border-none
+            cursor-pointer
+            p-[0px]
 }
 /*no pude centrar el texto de usuario junto a la imagen
 capaz escribi algo mal o algo está afectado globalmente el código, aunque
@@ -84,10 +97,13 @@ lo hice funcional, usuario y carrito van a ir a sus respectivas páginas
 (hasta que me confirmen si quieren asi o no)*/
 
 .encabezado {
-    display: flex;
-    justify-content: center;
-    background-color: #FFFFFF;
-    margin: 20px 300px 0px 300px;
+    @apply flex
+            justify-center
+            bg-[#FFFFFF]
+            mt-[20px] 
+            mr-[300px] 
+            mb-[0px] 
+            ml-[300px]
 }
 
 .encabezado p {
