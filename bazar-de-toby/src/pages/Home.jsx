@@ -1,4 +1,23 @@
-import { useEffect, useMemo, useState } from "react";
+import SearchBar from "../components/BarraBusqueda"
+
+function Home (){
+  //🌱agregar luego las funciones con script
+  return (
+    <div className="w-full p-3">
+      <SearchBar />
+      <div className="mx-5 flex flex-col text-center">
+        <p className="sub-division text-2xl">Destacado</p>
+        {/*🌱 Agregar carousel*/}
+      </div>
+      <div className="text-center">
+        <p className="sub-division text-2xl">Categortias</p>
+        {/*🌱 Agregar cuadricula*/}
+      </div>
+    </div>
+  )
+}
+export default Home
+/*import { useEffect, useMemo, useState } from "react";
 import CategoryCarousel from "../components/CategoryCarousel";
 import { fetchProducts, normalizeProduct } from "../lib/apiClient";
 import mock from "../data/products.json";
@@ -56,3 +75,4 @@ export default function Home(){
     </div>
   );
 }
+*/
