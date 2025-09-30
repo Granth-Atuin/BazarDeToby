@@ -16,7 +16,7 @@ function Navbar() {
         <div className="links flex gap-3">
           {/*🌱  cuando esten las demas paginas poner los link, esto es para mi misma, osea, luz*/}
           <Link to="/">Home</Link>
-          <Link to="/Producto">Producto x</Link>
+          <Link to="/List">Categorias</Link>
         </div>
         <div className="carro">
            {/*🌱  pasarlo a style y ponerlo en .boton-carro*/}

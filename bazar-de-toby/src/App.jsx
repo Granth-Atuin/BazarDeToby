@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import ProductDetail from "./pages/ProductDetail";
+import List from "./pages/list";
 
 /*🌱 mover los js a la carpeta a scripts, tmb pueden hacer las funciones dentro de los .jsx*/
 /*🌱 ver que es mejor*/
@@ -16,7 +16,7 @@ export default function App() {
       <div className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Producto" element={<ProductDetail />} />
+          <Route path="/List" element={<List />} />
         </Routes>
       </div>
       <Footer />

@@ -1,0 +1,66 @@
+import SearchBar from "../components/BarraBusqueda"
+
+
+function List() {
+    return(
+        <div className="w-full p-3">
+            <SearchBar />
+            <div className="bg-sky-50 flex flex-col text-center">
+                <p className="sub-division text-2xl">Destacado</p>
+                {/*🌱 Agregar carousel*/}
+            </div>
+            <div className="text-center">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-3 my-2">
+                    <div className="bg-purple-100">01</div>
+                    <div className="bg-purple-100">02</div>
+                    <div className="bg-purple-100">03</div>
+                    <div className="bg-purple-100">04</div>
+                    <div className="bg-purple-100">05</div>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default List
+/*<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bazar de Toby</title>
+    <link rel="stylesheet" href="./src/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <div class="navbar">
+        <nav>
+            <div class="titulo">
+                <p>El Bazar de Tobi</p>
+            </div>
+            <form class="busqueda" action="#" method="get">
+                <input type="text" name="buscar" placeholder="Peluche Marca ACME">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <form class="usuario" action="usuario.html" method="get">
+                <img src="https://imgs.search.brave.com/AkrMmwpddgNjxQseYczH0vIImCyJwvtdCskLCdCSOkw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzEzLzQ5/LzQzLzEzNDk0M2E1/ZjkxMDEzYmVlOTU4/ZjJhZWRkNWY3MTEy/LmpwZw" width="50px" height="50px">
+                <button type="submit">Usuario</button>
+            </form>
+            <div class="carrito">
+                <a href="https://www.youtube.com"><img src="https://imgs.search.brave.com/AkrMmwpddgNjxQseYczH0vIImCyJwvtdCskLCdCSOkw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzEzLzQ5/LzQzLzEzNDk0M2E1/ZjkxMDEzYmVlOTU4/ZjJhZWRkNWY3MTEy/LmpwZw" width="50px" height="50px"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="encabezado">
+        <img src="" width="450px" height="450px" alt="imagen">
+        <h2>Encabezado</h2>
+        <h4>descripcion</h4>
+    </div>
+    <footer>
+        
+    </footer>
+  </body>
+</html>
+ */
