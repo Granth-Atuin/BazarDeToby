@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; background: #fffbeb; }
+
+/*voy a poner como comentarios los comandos tailwind que por alguna razon dan error
+en el codigo, no debería y no sabría por qué, mañana lo veo mejor, por ahora voy
+remarcandolo para poder hacer commit -luka*/
+
+body {
+    @apply bg-[#FFE6A7]
+}
+
+nav {
+    @apply flex
+            items-center
+            justify-between
+            bg-[#99582A]
+            w-auto
+            p-15
+}
+
+.titulo {
+    @apply text-lg
+             bg-[#F5F5F5]
+            p-10
+            m-0
+            w-auto
+            rounded-lg
+            font-bold
+}
+
+.busqueda {
+    @apply  flex
+            justify-center
+            relative
+}
+
+.busqueda input {
+    @apply  width-full
+            pt-8 
+            pr-40 
+            pb-8
+            pl-10
+            text-base
+            border
+            border-solid
+            border[#ccc]
+            rounded-sm
+            w-xl
+            box-border
+}
+
+.busqueda i {
+    @apply absolute
+            top-[50%]
+            right-[5px]
+            transform-[translateY(-50%)]
+            bg-transparent
+            border-none
+            cursor-pointer
+            text-base
+            color-[#555]
+}
+
+/*no pude ver bien como hacer más grande el boton de busqueda donte está la lupa -luka*/
+/*Logré ponerlo bien y con reacción esooooooo, lastima no esté dentro dentro pero
+pero algo es algo jajs -luka*/
+
+.busqueda i:hover {
+    @apply color-[#000]
+}
+
+.usuario button {
+    @apply text-lg
+            bg-transparent
+            border-none
+            cursor-pointer
+            padding-[5px]
+            rounded-md
+
+}
+
+.usuario button:hover {
+    @apply bg-[#74421e] 
+}
+
+.carrito button {
+    @apply text-lg
+            bg-transparent
+            border-none
+            cursor-pointer
+            p-[0px]
+}
+/*no pude centrar el texto de usuario junto a la imagen
+capaz escribi algo mal o algo está afectado globalmente el código, aunque
+lo hice funcional, usuario y carrito van a ir a sus respectivas páginas
+(hasta que me confirmen si quieren asi o no)*/
+
+.encabezado {
+    @apply flex
+            justify-center
+            bg-[#FFFFFF]
+            mt-[20px] 
+            mr-[300px] 
+            mb-[0px] 
+            ml-[300px]
+}
+
+.encabezado p {
+    
+}
+
+
+
+/*@import "tailwindcss";
+
+Prueba visual fuerte: fondo crema para distinguir estilos cargados 
+
+html, body, #root { height: 100%; background: #fffbeb; }
+
+@theme {
+🌱cambiar por los del figma y establecer nombres especificos listo -luka
+  --color-bg:#FFE6A7;
+  --color-navbar:#99582A;
+  --color-footer:#BB9457;
+  --color-bg-carrousel:#D9D9D9;
+}
+
+@layer components{
+  .container-app { 
+    @apply max-w-7xl mx-auto px-4; 
+  }
+  .btn-primary  { 
+    @apply bg-yellow-400 
+            hover:bg-yellow-300 
+            text-gray-900 font-medium 
+            rounded-xl 
+            px-4 py-2 
+            transition-colors; 
+  }
+  .card { 
+    @apply bg-white 
+            rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.06)] 
+            border border-gray-100; 
+  }
+}
+
+🌱 Pasar el estilo de ⬇️abajo por como está arriba⬆️⬇
+
+:root {
+  @apply font-sans leading-6 font-normal
+          text-white/90 bg-[#242424]
+          antialiased
+}
+
+a {
+  @apply font-medium 
+          text-[#646cff] 
+          decoration-inherit
+}
+a:hover {
+  @apply text-[#535bf2]
+}
+
+body {
+  @apply m-0 flex 
+          place-items-center 
+          min-w-320 
+          min-h-100 
+          min-h-screen
+}
+
+h1 {
+  @apply text-5xl 
+          leading-1.1
+}
+
+#app {
+  @apply max-w-1280 
+          m-auto 
+          p-8 
+          text-center
+  m-auto = margin: 0 auto; (no encontré lógica para el '0 auto') -luka
+}
+
+.logo {
+  @apply h-[6em] 
+          p-6 
+          will-change-filter 
+          transition-filter-300
+  transition: filter 300ms; (no encontré forma lógica de interpretar esos 300ms)
+}
+
+.logo:hover {
+  @apply filter drop-shadow-[0_0_2em_#646cffaa]
+}
+.logo.vanilla:hover {
+  @apply filter drop-shadow-[0 0 2em #f7df1eaa]
+}
+
+.card {
+  @apply p-8
+}
+
+.read-the-docs {
+  @apply text-[#888]
+}
+
+button {
+  @apply rounded-lg 
+          border border-transparent 
+          py-[0.6em] 
+          px-[1.2em] 
+          text-base 
+          font-medium font-[inherit] 
+          bg-[#1a1a1a] 
+          transition-colors duration-250 
+          cursor-pointer
+  border border-tranparent = border: 1px solid transparent;
+}
+button:hover {
+  @apply border-[#646cff]
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} falta apuesta en comun sobre como traducir esto -luka
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply text-[#213547] 
+            bg-[#ffffff]
+  }
+  a:hover {
+    @apply text-[#747bff]
+  }
+  button {
+    @apply bg-[#f9f9f9]
+  }
+}*/
