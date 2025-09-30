@@ -1,5 +1,5 @@
 import { ShoppingCart } from "lucide-react";
-import { useCart } from "../store/cartStore"; // ajustar según tu estructura
+import { useCart } from "../store/cartStore";
 
 export default function ProductCard({ product }) {
   const { add } = useCart();
