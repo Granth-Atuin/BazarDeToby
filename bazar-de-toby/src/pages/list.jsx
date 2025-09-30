@@ -1,21 +1,32 @@
 import SearchBar from "../components/BarraBusqueda"
+import ProductCard from "../components/ProductCard"
 
 
 function List() {
     return(
         <div className="w-full p-3">
             <SearchBar />
-            <div className="bg-sky-50 flex flex-col text-center">
-                <p className="sub-division text-2xl">Destacado</p>
+            <div className="bg-sky-50 flex flex-col">
+                <p className="sub-division text-2xl">filtros</p>
                 {/*🌱 Agregar carousel*/}
             </div>
-            <div className="text-center">
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-3 my-2">
-                    <div className="bg-purple-100">01</div>
-                    <div className="bg-purple-100">02</div>
-                    <div className="bg-purple-100">03</div>
-                    <div className="bg-purple-100">04</div>
-                    <div className="bg-purple-100">05</div>
+            <div className="">
+                <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-3 my-2">
+                    <div className="bg-purple-100">
+                        <ProductCard/>
+                    </div>
+                    <div className="bg-purple-100">
+                        <ProductCard/>
+                    </div>
+                    <div className="bg-purple-100">
+                        <ProductCard/>
+                    </div>
+                    <div className="bg-purple-100">
+                        <ProductCard/>
+                    </div>
+                    <div className="bg-purple-100">
+                        <ProductCard/>
+                    </div>
                 </div>
             </div>
         </div>
