@@ -10,7 +10,7 @@ function Home (){
         {/*🌱 Agregar carousel*/}
       </div>
       <div className="text-center">
-        <p className="sub-division text-2xl">Categortias</p>
+        <p className="sub-division text-2xl">Categorias</p>
         {/*🌱 Agregar cuadricula*/}
       </div>
     </div>
