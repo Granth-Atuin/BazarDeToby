@@ -11,7 +11,7 @@ import List from "./pages/list";
 
 export default function App() {
   return (
-    <div className="flex flex-col w-screen min-h-screen">
+    <div className="flex flex-col w-screen min-h-screen bg-[#FFE6A7]">
       <Navbar />
       <div className="flex-1">
         <Routes>
