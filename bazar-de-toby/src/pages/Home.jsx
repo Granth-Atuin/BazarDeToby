@@ -13,18 +13,7 @@ function Home (){
       <div className="text-center">
         <p className="sub-division text-2xl">Categorias</p>
         {/*🌱 Agregar cuadricula*/}
-          <div className="w-300 grid grid-cols-2 md:grid-cols-3 gap-3 my-2 mx-full">
-              <div className="bg-purple-100 text-center">
-                  <p className="text-2x1">Martin</p>
-              </div>
-             <div className="bg-purple-100">
-                  <p className="text-2x1">Martin2</p>
-              </div>
-              <div className="bg-purple-100">
-                  <p className="text-2x1">Martin3</p>
-               </div>
-            </div>
-        </div>
+      </div>
     </div>
   )
 }
