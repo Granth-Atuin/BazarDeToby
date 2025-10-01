@@ -1,4 +1,5 @@
-import SearchBar from "../components/BarraBusqueda"
+import SearchBar from "@/components/BarraBusqueda"
+
 
 function Home (){
   //🌱agregar luego las funciones con script
