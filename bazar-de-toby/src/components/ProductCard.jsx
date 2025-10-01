@@ -3,9 +3,11 @@ import { useCart } from "../store/cartStore";*/
 function ProductCard(){
   return(
     <div className="bg-purple-50 p-1">
-      <img src="" alt="producto" />
-      <h3>produto name</h3>
-      <p>precio</p>
+      <img src="" alt="producto" 
+        className=""
+      />
+      <h3 className="text-lg text-center">producto name</h3>
+      <p className="">$</p>
       <button>agregar</button>
     </div>
   )
