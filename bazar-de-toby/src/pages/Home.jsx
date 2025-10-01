@@ -1,18 +1,35 @@
-import SearchBar from "@/components/BarraBusqueda"
-
+import SearchBar from "../components/BarraBusqueda"
+import ProductCard from "../components/ProductCard"
 
 function Home (){
   //🌱agregar luego las funciones con script
   return (
     <div className="w-full p-3">
       <SearchBar />
-      <div className="mx-5 flex flex-col text-center">
-        <p className="sub-division text-2xl">Destacado</p>
+      <div className="mx-5 flex flex-col">
+        <p className="sub-division text-2xl  text-center">Destacado</p>
         {/*🌱 Agregar carousel*/}
       </div>
-      <div className="text-center">
-        <p className="sub-division text-2xl">Categorias</p>
+      <div className="">
+        <p className="sub-division text-2xl  text-center">Categorias</p>
         {/*🌱 Agregar cuadricula*/}
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-2">
+            <div className="bg-purple-100">
+                <ProductCard/>
+            </div>
+            <div className="bg-purple-100">
+                <ProductCard/>
+            </div>
+            <div className="bg-purple-100">
+                <ProductCard/>
+            </div>
+            <div className="bg-purple-100">
+                <ProductCard/>
+            </div>
+            <div className="bg-purple-100">
+                <ProductCard/>
+            </div>
+        </div>
       </div>
     </div>
   )

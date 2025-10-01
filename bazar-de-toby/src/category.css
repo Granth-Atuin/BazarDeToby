@@ -239,3 +239,18 @@ button:focus-visible {
     @apply bg-[#f9f9f9]
   }
 }*/
+/* (Esto hice para el categoria en home, lo guardo por acá hasta que se arme bien el resto -luka)
+          <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-3 my-2 text-center">
+              <div className="bg-purple-100">
+                <img className="w-110 h-100" src="https://imgs.search.brave.com/Gh4JJ_N5-2XwQQIyn5sy4y27faCpE3LsveMOAXvY39g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vMTAwMDYy/Mi83NjE1L2kvNDUw/L2RlcG9zaXRwaG90/b3NfNzYxNTU5NTUt/c3RvY2stcGhvdG8t/bWlsay1jYXJ0b24t/Ym94LmpwZw"></img>
+                <p className="text-[24px]">Lacteos</p>
+              </div>
+             <div className="bg-purple-100">
+                <img className="w-110 h-80 flex align-center" src="https://imgs.search.brave.com/KgTUf-y2-_TNeDD1RjMLvnfuCIf-0X0TevTA_PHONPY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNjE4/Nzc1L3BleGVscy1w/aG90by02MTg3NzUu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw"></img>
+                  <p className="text-[24px]">Carnes</p>
+              </div>
+              <div className="bg-purple-100">
+                  <p className="text-[24px]">Valentina</p>
+               </div>
+            </div>
+            */

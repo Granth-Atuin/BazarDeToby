@@ -1,4 +1,19 @@
-import { ShoppingCart } from "lucide-react";
+/*import { ShoppingCart } from "lucide-react";
+import { useCart } from "../store/cartStore";*/
+function ProductCard(){
+  return(
+    <div className="bg-purple-50 p-1">
+      <img src="" alt="producto" 
+        className=""
+      />
+      <h3 className="text-lg text-center">producto name</h3>
+      <p className="">$</p>
+      <button>agregar</button>
+    </div>
+  )
+}
+export default ProductCard
+/*import { ShoppingCart } from "lucide-react";
 import { useCart } from "../store/cartStore"; // ajustar según tu estructura
 
 export default function ProductCard({ product }) {
@@ -22,3 +37,4 @@ export default function ProductCard({ product }) {
     </div>
   );
 }
+*/

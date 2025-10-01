@@ -10,13 +10,13 @@ function Navbar() {
 
   return (
     /*🌱 el primer class pasarlo a style cy ponerlo en .header*/
-    <div className="header">
+    <div className="h-16 w-full flex items-center justify-between border-b border-gray-500 px-5 bg-[#99582A]">
       <span className="font-semibold text-gray-900 text-4xl">Bazar de Tobi</span>
       <nav className="w-1/2 flex flex-row items-center justify-around">
         <div className="links flex gap-3">
           {/*🌱  cuando esten las demas paginas poner los link, esto es para mi misma, osea, luz*/}
           <Link to="/">Home</Link>
-          <Link to="/Producto">Producto x</Link>
+          <Link to="/Ficha">Categorias</Link>
         </div>
         <div className="carro">
            {/*🌱  pasarlo a style y ponerlo en .boton-carro*/}

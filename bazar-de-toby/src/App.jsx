@@ -12,9 +12,9 @@ import Pruebaboton from "./pages/Pruebaboton";
 
 export default function App() {
   return (
-    <div className="flex flex-col w-screen min-h-screen">
+    <div className="flex flex-col w-screen min-h-screen bg-[#FFE6A7]">
       <Navbar />
-      <div className="flex-1">
+      <div className="flex flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Producto" element={<ProductDetail />} />

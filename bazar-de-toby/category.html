@@ -1,39 +1,4 @@
-import SearchBar from "../components/BarraBusqueda"
-import ProductCard from "../components/ProductCard"
-
-
-function List() {
-    return(
-        <div className="w-full p-3">
-            <SearchBar />
-            <div className="bg-sky-50 flex flex-col">
-                <p className="sub-division text-2xl">filtros</p>
-                {/*🌱 Agregar carousel*/}
-            </div>
-            <div className="">
-                <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-3 my-2">
-                    <div className="bg-purple-100">
-                        <ProductCard/>
-                    </div>
-                    <div className="bg-purple-100">
-                        <ProductCard/>
-                    </div>
-                    <div className="bg-purple-100">
-                        <ProductCard/>
-                    </div>
-                    <div className="bg-purple-100">
-                        <ProductCard/>
-                    </div>
-                    <div className="bg-purple-100">
-                        <ProductCard/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
-export default List
-/*<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -74,4 +39,3 @@ export default List
     </footer>
   </body>
 </html>
- */
